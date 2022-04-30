@@ -1,7 +1,57 @@
 body{
 	background: linear-gradient(aqua, orange);
 	background-repeat: no-repeat;
-	
+
 	width: 100vw;
 	height: 100vh;
+	margin: 0;
+}
+
+h1{
+	font-size: 2em;
+	/* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+	
+	color: orange;
+	text-shadow: 0 0 0.15em black;
+	
+	text-align: center;
+}
+
+button{
+	display: block;
+	margin: auto;
+
+	height:	5vh;
+	width:	20vw;
+	background-color: rgba(255, 229, 179, 0.274);
+
+	color:orange;
+	font-size: 1em;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
+	border: 2px solid orange;
+	border-radius: 2px;
+}
+
+button:hover{
+	background-color: rgba(255, 228, 179, 0.61);
+	color:rgb(255, 102, 0);
+
+}
+
+.card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-collapse: separate;
+	border-spacing: 4em;
+
+	margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+	padding: auto;
+	/* background-color: transparent; */
+
+	height: 45vh;
 }

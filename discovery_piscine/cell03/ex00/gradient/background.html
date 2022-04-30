@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet", href="background.css">
+	<meta charset="UTF-8">
+	<title>Background</title>
+</head>
+
+<body>
+	<h1>Background Random Color</h1>
+	<button onclick="generateNewColor()">Generate a new background</button>
+	<script>
+		function	generateGradientColor(){
+			var angle = Math.floor(Math.random() * 360);
+			var r = Math.floor(Math.random() * 256);
+			var g = Math.floor(Math.random() * 256);
+			var b = Math.floor(Math.random() * 256);
+			var rOther = Math.floor(Math.random() * 256);
+			var gOther = Math.floor(Math.random() * 256);
+			var bOther = Math.floor(Math.random() * 256);
+			var bgColor ="linear-gradient(" + angle +"turn, rgb(" + r + "," + g + "," + b +"), rgb(" + rOther + "," + gOther + "," + bOther +")";
+			console.log(bgColor);
+			document.body.style.background = bgColor;
+		}
+	</script>
+</body>
+
+</html>

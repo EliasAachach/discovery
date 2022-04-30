@@ -2,20 +2,44 @@
 <html lang="en">
 
 <head>
-	<link rel="stylesheet", href="background.css">
+	<link rel="stylesheet" , href="background.css">
 	<meta charset="UTF-8">
 	<title>Background</title>
 </head>
 
 <body>
-	<h1>Background Random Color</h1>
-	<button onclick="generateNewColor()">Generate a new backgrond</button>
+	<!-- Maybe try to put the buttons on a table so it's kawaii -->
+		<table class="card">
+					<h1>Background Random Color</h1>
+			<tr>
+				<td>
+					<button onclick="generateColor()">Generate a new background</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button onclick="generateGradientColor()">Generate a gradient background</button>
+				</td>
+			</tr>
+		</table>
 	<script>
-		function	generateNewColor(){
+		function generateColor() {
 			var r = Math.floor(Math.random() * 256);
 			var g = Math.floor(Math.random() * 256);
 			var b = Math.floor(Math.random() * 256);
-			var bgColor ="rgb(" + r + "," + g + "," + b +")";
+			var bgColor = "rgb(" + r + "," + g + "," + b + ")";
+			console.log(bgColor);
+			document.body.style.background = bgColor;
+		}
+		function generateGradientColor() {
+			var angle = Math.floor(Math.random() * 360);
+			var r = Math.floor(Math.random() * 256);
+			var g = Math.floor(Math.random() * 256);
+			var b = Math.floor(Math.random() * 256);
+			var rOther = Math.floor(Math.random() * 256);
+			var gOther = Math.floor(Math.random() * 256);
+			var bOther = Math.floor(Math.random() * 256);
+			var bgColor = "linear-gradient(" + angle + "turn, rgb(" + r + "," + g + "," + b + "), rgb(" + rOther + "," + gOther + "," + bOther + ")";
 			console.log(bgColor);
 			document.body.style.background = bgColor;
 		}

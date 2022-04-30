@@ -1,0 +1,33 @@
+body{
+	background: linear-gradient(aqua, orange);
+	background-repeat: no-repeat;
+	
+	width: 100vw;
+	height: 100vh;
+}
+
+h1{
+	font-size: 2em;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
+	color: orange;
+	text-shadow: 0 0 0.15em black;
+	
+	text-align: center;
+}
+
+button{
+	display: block;
+	margin: auto;
+
+	height:	5vh;
+	width:	20vw;
+	background-color: aqua;
+
+	color:orange;
+	font-size: 1em;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
+	border: 2px solid orange;
+	border-radius: 2px;
+}
